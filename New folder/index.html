@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #3b5998; color: white; font-family: sans-serif; padding: 20px;">
+
+    <h2>Facebook-style Layout (The Parent)</h2>
+    <p>This blue area is the main website. It never disappears.</p>
+
+    <iframe srcdoc="
+        <body style='background-color: white; padding: 20px; border-radius: 10px;'>
+            <h3>I am a Game (The Child)</h3>
+            <p>I am living inside the Facebook Parent.</p>
+            
+            <button onclick='window.location.href=`#`'>
+                Update Game (_self - default)
+            </button>
+            <br><br>
+            
+            <a href='https://www.wikipedia.org' target='_parent' 
+               style='color: red; font-weight: bold;'>
+               Go to Profile (_parent)
+            </a>
+        </body>
+    " width="400" height="250" style="border: none; border-radius: 10px;"></iframe>
+
+    <p style="margin-top: 20px;">
+        Notice: If you click the red link, only the WHITE box changes to a new page. 
+        The BLUE background stays!
+    </p>
+
+</body>
+</html>

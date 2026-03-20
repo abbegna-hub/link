@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ewket Lehibret Teacher Demo</title>
+</head>
+<body style="font-family: sans-serif; background-color: #2c3e50; color: white; padding: 20px;">
+
+    <h1>Ewket Lehibret Portal</h1>
+    <p>Teacher's Example: Using <b>Frame Names</b></p>
+
+    <table width="100%" border="0" cellpadding="10">
+        <tr>
+            <td width="30%" valign="top" style="background-color: #ecf0f1; color: black; border-radius: 10px;">
+                <h3>Main Menu</h3>
+                <hr>
+                <p>Click a link to send it to the "Screen" on the right:</p>
+                
+                <ul style="line-height: 2;">
+                    <li><a href="https://en.wikipedia.org/wiki/Ethiopia" target="lesson-screen">About Ethiopia</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Mathematics" target="lesson-screen">Math Lesson</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/History" target="lesson-screen">History Lesson</a></li>
+                </ul>
+
+                <hr>
+                <a href="index.html" target="_top" style="color: red;">Logout (_top)</a>
+            </td>
+
+            <td width="70%">
+                <div style="background-color: white; padding: 10px; border-radius: 10px;">
+                    <h3 style="color: black; margin-top: 0;">Display Screen (Name: lesson-screen)</h3>
+                    
+                    <iframe name="lesson-screen" srcdoc="<h2 style='font-family:sans-serif; text-align:center; margin-top:100px;'>Select a lesson from the left menu!</h2>" width="100%" height="500px" style="border: 2px solid #34495e;"></iframe>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
